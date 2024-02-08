@@ -2,8 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  display: grid;
-  justify-content: center;
-  min-height: 100vh;
+/* * {
+  transition: background-color 0.075s, color 0.02s;
+  -webkit-transition: background-color 0.075s, color 0.02s;
+  -moz-transition: background-color 0.075s, color 0.02s;
+  -ms-transition: background-color 0.075s, color 0.02s;
+  -o-transition: background-color 0.075s, color 0.02s;
+} */
+
+* {
+  transition: all 0.035s;
+  -webkit-transition: all 0.035s;
+  -moz-transition: all 0.035s;
+  -ms-transition: all 0.035s;
+  -o-transition: all 0.035s;
 }

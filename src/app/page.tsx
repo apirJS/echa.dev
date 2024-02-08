@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className='h-[1000px] mt-[min(12vh,150px)]'>
+    <div className='h-[500px] box-border border '>
       <section>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus,
         ducimus.
