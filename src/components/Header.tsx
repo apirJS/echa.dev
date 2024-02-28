@@ -16,7 +16,7 @@ export default function Header() {
 
   return (
     <header className='inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 border-b-zinc-300 dark:bg-dark-primary justify-center items-center md:font-medium bg-white'>
-      <div className='flex  min-w-[min(70vw,700px)] justify-between'>
+      <div className='flex  min-w-[min(70vw,760px)] justify-between'>
         <Navbar pathName={pathName} />
         <div className='flex items-center gap-4 text-[1.3rem]'>
           {mounted ? (
