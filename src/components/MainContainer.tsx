@@ -4,7 +4,7 @@ export default function MainContainer({
   children: React.ReactNode;
 }) {
   return (
-    <main className='grid justify-center lg:max-w-[max(800px,80%)] mt-[min(12vh,150px)]'>
+    <main className='grid md:w-[52vw] mt-[min(12vh,150px)] md:p-5'>
       {children}
     </main>
   );
