@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  transition: all 0.035s;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-transition: all 0.035s;
+  -moz-transition: all 0.035s;
+  -ms-transition: all 0.035s;
+  -o-transition: all 0.035s;
+}
+
+.active-link {
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 7px;
+  text-decoration-color: rgba(0, 255, 119, 0.831);
+}
+
+.dark .active-link {
+  text-decoration-color: rgba(255, 0, 0, 0.53);
+}
+
+
+
