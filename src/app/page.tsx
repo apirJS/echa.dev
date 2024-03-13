@@ -3,7 +3,7 @@ import { ID } from 'country-flag-icons/react/3x2';
 
 export default function Home() {
   return (
-    <div className='h-[500px] flex flex-col gap-10'>
+    <div className=' flex flex-col gap-10'>
       <section className='flex flex-row gap-x-4 items-end'>
         <div>
           <Image
