@@ -3,15 +3,11 @@
 @tailwind utilities;
 
 * {
-  transition: all 0.035s;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  -webkit-transition: all 0.035s;
-  -moz-transition: all 0.035s;
-  -ms-transition: all 0.035s;
-  -o-transition: all 0.035s;
 }
+
 
 .active-link {
   text-decoration: underline;

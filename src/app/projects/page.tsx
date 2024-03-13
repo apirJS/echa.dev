@@ -55,7 +55,7 @@ const projects: Project[] = [
 
 export default function Projects() {
   return (
-    <main className='grid grid-cols-2 gap-5'>
+    <main className='grid grid-cols-2 gap-5 '>
       {projects.map((project, index) => {
         return (
           <div className='border rounded-sm p-2' key={index}>
