@@ -8,7 +8,7 @@ export default function ThemeToggle() {
   return (
     <button
       onClick={() => setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')}
-      className='hover:scale-105'
+      className='active:scale-105'
     >
       {resolvedTheme === 'dark' ? <PiMoonStars /> : <IoSunnyOutline />}
     </button>

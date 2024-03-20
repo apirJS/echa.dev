@@ -5,7 +5,7 @@ export default function IconMail() {
   const { resolvedTheme } = useTheme();
 
   return (
-    <button className='hover:scale-105'
+    <button className='active:scale-105'
   >
       <IoMailOutline color={resolvedTheme === 'light' ? 'black' : 'white'} />
     </button>

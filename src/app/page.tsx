@@ -32,12 +32,8 @@ export default function Home() {
           />
         </div>
         <p>
-          I can help you build a production ready <strong>website</strong> and{' '}
-          <strong>mobile apps</strong>
+          I can help you build a production ready <strong>website</strong>
         </p>
-      </section>
-      <section>
-        <h1>Skill Sets</h1>
       </section>
       <button className='dark:bg-[#0c0c0c] rounded-md dark:text-slate-200 w-[6.5vw] h-[5vh] font-mono dark:font-medium text-lg mt-5 active:scale-105 dark:hover:text-white bg-slate-200 font-bold'>
         Hire me
