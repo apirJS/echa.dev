@@ -22,14 +22,26 @@ export default function Home() {
       </section>
       <section className='dark:text-zinc-300 text-md'>
         <div className='flex items-center gap-1'>
-          <p>I&#39;m a <strong>Software Engineer</strong> based on Sleman Regency, Indonesia</p>
-          <ID className='mt-[2px] dark:border-none border border-slate-300' width={22} />
+          <p>
+            I&#39;m a <strong>Software Engineer</strong> based on Sleman
+            Regency, Indonesia
+          </p>
+          <ID
+            className='mt-[2px] dark:border-none border border-slate-300'
+            width={22}
+          />
         </div>
-        <p>I can help you build a production ready <strong>website</strong> and <strong>mobile apps</strong></p>
-        <button className='dark:bg-[#0c0c0c] rounded-md dark:text-slate-200 w-[6.5vw] h-[5vh] font-mono dark:font-medium text-lg mt-5 active:scale-105 dark:hover:text-white bg-slate-200 font-bold'>
-          Hire me
-        </button>
+        <p>
+          I can help you build a production ready <strong>website</strong> and{' '}
+          <strong>mobile apps</strong>
+        </p>
       </section>
+      <section>
+        <h1>Skill Sets</h1>
+      </section>
+      <button className='dark:bg-[#0c0c0c] rounded-md dark:text-slate-200 w-[6.5vw] h-[5vh] font-mono dark:font-medium text-lg mt-5 active:scale-105 dark:hover:text-white bg-slate-200 font-bold'>
+        Hire me
+      </button>
     </div>
   );
 }
