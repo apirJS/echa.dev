@@ -6,7 +6,7 @@ interface NavbarProps {
 
 export default function Navbar({ pathName }: NavbarProps) {
   return (
-    <nav className='hidden md:flex gap-8 text-base'>
+    <nav className='hidden md:static md:flex gap-8 text-base'>
       <Link href='/' className={`${pathName === '/' ? 'active-link' : ''}`}>
         Home
       </Link>

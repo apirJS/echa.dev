@@ -16,9 +16,6 @@ const config: Config = {
       },
       colors: {
         "dark-primary": "#171717",
-      },
-      fontSize: {
-
       }
     },
   },
