@@ -46,7 +46,7 @@ export default function Contact() {
         </div>
       </section>
       <section className=' p-3'>
-        <h1 className='text-slate-200'>send me an email</h1>
+        <h1 className='text-slate-200 mb-2'>Send me an email</h1>
         <form className='flex flex-col gap-3 items-center text-[1rem]'>
           <div className='flex flex-row gap-2 w-full'>
             <input
