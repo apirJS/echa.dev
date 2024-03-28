@@ -20,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang='en' suppressHydrationWarning>
       <body
-        className={`${inter.className} dark:bg-dark-primary flex justify-center overflow-y-scroll`}
+        className={`${inter.className} dark:bg-dark-primary flex justify-center overflow-y-scroll relative`}
       >
         <Provider>
           <Header />

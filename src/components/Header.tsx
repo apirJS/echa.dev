@@ -29,13 +29,14 @@ export default function Header() {
     } else {
       setIsMenuOpen(true);
     }
+    console.log(isMenuOpen);
   }
 
   return (
     <>
-      <header className='inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 border-b-zinc-300 dark:bg-dark-primary md:justify-center justify-start items-center md:font-medium bg-white'>
-        <div className='flex md:ml-0 ml-4 min-w-[min(70vw,760px)] justify-between'>
-          <Navbar pathName={pathName} paths={paths}/>
+      <header className='inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 border-b-zinc-300 dark:bg-dark-primary md:justify-center justify-between items-center md:font-medium bg-white'>
+        <div className='flex md:ml-0 ml-4 md:w-[min(70vw,760px)] w-full justify-between'>
+          <Navbar pathName={pathName} paths={paths} />
           <div className='flex items-center gap-4 text-[1.5rem]'>
             {mounted ? (
               <>
@@ -54,7 +55,7 @@ export default function Header() {
           </div>
         </div>
         <button
-          className='md:hidden ml-14 active:scale-105'
+          className='sm:hidden ml-10 active:scale-105'
           onClick={handleMenu}
         >
           <IoIosMenu size={26} />
