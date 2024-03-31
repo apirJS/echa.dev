@@ -1,43 +1,57 @@
+import TechStack from '@/components/TechStack';
 import Image from 'next/image';
-import { ID } from 'country-flag-icons/react/3x2';
 
 export default function Home() {
   return (
-    <div className=' flex flex-col gap-10'>
-      <section className='flex flex-row gap-x-4 items-end'>
-        <div>
-          <Image
-            alt='Echa Apriliyanto'
-            width={250}
-            height={200}
-            src='https://placehold.co/600x400/black/white'
-          />
-        </div>
-        <div className='text-[clamp(2rem,3vw,100px)] font-extrabold dark:text-zinc-100'>
-          <h1>
-            Hi There <span aria-label='waving hand emoji'>👋</span>
-          </h1>
-          <h1>I&#39;m Echa Apriliyanto</h1>
+    <div className=' flex flex-col gap-y-4'>
+      <section className='flex flex-row gap-x-3 items-center'>
+        <Image
+          alt='Echa Apriliyanto'
+          width={150}
+          height={200}
+          src='/profile-3-4.jpg'
+          className='rounded-md'
+        />
+        <div className='text-lg dark:text-zinc-100 flex flex-col gap-y-4'>
+          <div>
+            <h1 className='font-bold'>
+              Hi There
+              <span aria-label='waving hand emoji' className='waving-hand'>
+                👋
+              </span>
+            </h1>
+            <h1 className='font-bold'>I&#39;m Echa Apriliyanto</h1>
+          </div>
+          <div>
+            <p className='text-xs'>
+              You can call me <strong>Echa</strong> &#40;he/him&#41;
+            </p>
+            <p className='text-xs'>
+              I use <strong>JavaScript/TypeScript</strong> for personal and work
+              projects
+            </p>
+          </div>
         </div>
       </section>
-      <section className='dark:text-zinc-300 text-md'>
-        <div className='flex items-center gap-1'>
-          <p>
-            I&#39;m a <strong>Software Engineer</strong> based on Sleman
-            Regency, Indonesia
-          </p>
-          <ID
-            className='mt-[2px] dark:border-none border border-slate-300'
-            width={22}
-          />
-        </div>
+      <section className='dark:text-zinc-300 text-sm'>
         <p>
-          I can help you build a production ready <strong>website</strong>
+          I&#39;m a <strong>Software Engineer</strong> based in Indonesia
+        </p>
+        <p>
+          I can do <strong>Front End</strong> and <strong>Back End</strong> Web
+          Development
+        </p>
+        <br />
+        <p>
+          I specialize in doing frontend to craft smooth and responsive
+          websites. I&#39;d love to explore and utilize new technologies to make
+          my life easier
         </p>
       </section>
-      <button className='dark:bg-[#0c0c0c] rounded-md dark:text-slate-200 max-w-[calc(10vw+1rem)] h-[5vh] font-mono dark:font-medium text-lg mt-5 active:scale-105 dark:hover:text-white bg-slate-200 font-bold'>
-        Hire me
-      </button>
+      <section className='flex flex-col gap-y-1'>
+        <h5 className='font-bold text-md'>My Tech Stack <span className='font-medium'>&</span> Tools</h5>
+        <TechStack />
+      </section>
     </div>
   );
 }

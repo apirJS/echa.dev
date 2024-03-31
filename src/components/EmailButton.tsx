@@ -1,7 +1,7 @@
 import { useTheme } from 'next-themes';
 import { IoMailOutline } from 'react-icons/io5';
 
-export default function IconMail() {
+export default function EmailButton() {
   const { resolvedTheme } = useTheme();
 
   return (

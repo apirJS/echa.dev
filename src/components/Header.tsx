@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react';
 import LoadingSpin from 'react-loading-spin';
 import Navbar from './Navbar';
-import IconMail from './IconMail';
+import EmailButton from './EmailButton';
 import ThemeToggle from './ThemeToggle';
 import { usePathname } from 'next/navigation';
 import { IoIosMenu } from 'react-icons/io';
@@ -34,13 +34,13 @@ export default function Header() {
 
   return (
     <>
-      <header className='inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 border-b-zinc-300 dark:bg-dark-primary md:justify-center justify-between items-center md:font-medium bg-white'>
+      <header className='z-[500] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 border-b-zinc-300 dark:bg-dark-primary md:justify-center justify-between items-center md:font-medium bg-white'>
         <div className='flex md:ml-0 ml-4 md:w-[min(70vw,760px)] w-full justify-between'>
           <Navbar pathName={pathName} paths={paths} />
           <div className='flex items-center gap-4 text-[1.5rem]'>
             {mounted ? (
               <>
-                <IconMail />
+                <EmailButton />
                 <ThemeToggle />
               </>
             ) : (
@@ -55,7 +55,7 @@ export default function Header() {
           </div>
         </div>
         <button
-          className='sm:hidden ml-10 active:scale-105'
+          className='sm:hidden mr-6 active:scale-105'
           onClick={handleMenu}
         >
           <IoIosMenu size={26} />

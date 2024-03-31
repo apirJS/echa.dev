@@ -16,8 +16,8 @@ export default function NavMobile({
 }: Props) {
   return (
     <div
-      className={`grid grid-cols-[4fr,6fr] absolute inset-0 min-h-[100vh] ${
-        isMenuOpen ? 'md:hidden' : 'hidden' 
+      className={`sm:hidden grid grid-cols-[4fr,6fr] absolute inset-0 min-h-[100vh] z-[1000] nav-mobile ${
+        isMenuOpen ? '' : 'hidden' 
       } transition`}
     >
       <div className='bg-transparent' onClick={() => setIsMenuOpen(false)}></div>
