@@ -6,6 +6,7 @@ import { LuInstagram } from 'react-icons/lu';
 export default function Contacts() {
   return (
     <section className=' dark:border-slate-400 p-3 gap-y-2 flex flex-col text-md'>
+      <h2 className='text-base font-bold'>Feel free to reach me <span aria-label='smile emoji'>😊</span></h2>
       <div className='flex items-center gap-x-2'>
         <MdOutlineEmail size={26} />
         <a
