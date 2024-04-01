@@ -4,7 +4,7 @@ import { LuPencilLine } from 'react-icons/lu';
 export default function SignIn() {
   return (
     <section className='p-3'>
-      <h1 className='flex flex-row justify-center items-center gap-x-1 text-base font-bold mb-2'>
+      <h1 className='flex flex-row justify-start items-center gap-x-1 text-base font-semibold mb-2'>
         <p>Leave a comment</p>
         <LuPencilLine />
       </h1>

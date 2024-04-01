@@ -34,10 +34,10 @@ export default function Header() {
 
   return (
     <>
-      <header className='z-[500] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 border-b-zinc-300 dark:bg-dark-primary md:justify-center justify-between items-center md:font-medium bg-white'>
-        <div className='flex md:ml-0 ml-4 md:w-[min(70vw,760px)] w-full justify-between'>
+      <header className='z-[500] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
+        <div className='flex ml-4 lg:max-w-[50vw] w-full justify-between'>
           <Navbar pathName={pathName} paths={paths} />
-          <div className='flex items-center gap-4 text-[1.5rem]'>
+          <div className='flex items-center gap-4 text-[1.5rem] mr-4'>
             {mounted ? (
               <>
                 <EmailButton />

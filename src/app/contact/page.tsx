@@ -5,7 +5,7 @@ import Comments from '@/app/contact/components/Comments';
 
 export default function Contact() {
   return (
-    <main className='flex flex-col justify-start md:justify-center gap-3 min-w-[80vw] md:min-w-[50vw]'>
+    <main className='flex flex-col justify-start md:justify-center gap-1 min-w-[80vw] md:min-w-[50vw]'>
       <Contacts />
       <SignIn />
       <Comments />
