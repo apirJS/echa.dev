@@ -24,17 +24,27 @@ export default function Header() {
   }, []);
 
   function handleMenu(): void {
-    if (isMenuOpen) {
-      setIsMenuOpen(false);
-    } else {
-      setIsMenuOpen(true);
-    }
-    console.log(isMenuOpen);
+    setIsMenuOpen(isMenuOpen ? false : true);
   }
+
+  useEffect(() => {
+    if (window && typeof window !== 'undefined') {
+      window.addEventListener('scroll', () => {
+        const header = document.querySelector('header');
+        if (header) {
+          if (window.scrollY > 0) {
+            header.classList.add('border-b');
+          } else {
+            header.classList.remove('border-b');
+          }
+        }
+      });
+    }
+  }, []);
 
   return (
     <>
-      <header className='z-[500] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
+      <header className='transition box-content z-[500] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
         <div className='flex ml-4 lg:max-w-[50vw] w-full justify-between'>
           <Navbar pathName={pathName} paths={paths} />
           <div className='flex items-center gap-4 text-[1.5rem] mr-4'>

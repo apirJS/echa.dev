@@ -30,7 +30,7 @@ export default function Contacts() {
       <div className='flex items-center gap-x-2'>
         <FaGithub size={26} />
         <a target='_blank' href='https://github.com/apirPr' className=''>
-          @apirPr
+          @apirJS
         </a>
       </div>
       <div className='flex items-center gap-x-2'>

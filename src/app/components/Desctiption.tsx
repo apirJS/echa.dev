@@ -2,7 +2,7 @@ export default function Description() {
   return (
     <section className='dark:text-neutral-300 text-sm'>
       <p>
-        I&#39;m a <strong>Software Engineer</strong> based in Indonesia
+        I&#39;m a Software Engineer based in Indonesia
       </p>
       <p className="mb-3">
         I can do <strong>Front End</strong> and <strong>Back End</strong> Web

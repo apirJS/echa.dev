@@ -11,7 +11,7 @@ export default function Hero() {
         className='rounded-md'
       />
       <div className='flex flex-col gap-y-4'>
-        <div className='text-xl font-bold sm:text-2xl md:text-3xl'>
+        <div className='text-xl font-bold sm:text-2xl md:text-3xl xl:text-4xl'>
           <h1>
             Hi There
             <span aria-label='waving hand emoji' className='waving-hand'>
@@ -20,12 +20,12 @@ export default function Hero() {
           </h1>
           <h1 className='font-bold'>I&#39;m Echa Apriliyanto</h1>
         </div>
-        <div className='text-xs sm:text-base'>
+        <div className='text-xs xs:text-base'>
           <p>
             You can call me <strong>Echa</strong> &#40;he/him&#41;
           </p>
           <p>
-            I use <strong>JavaScript/TypeScript</strong> for personal and work
+            I use JavaScript/TypeScript for personal and work
             projects
           </p>
         </div>
