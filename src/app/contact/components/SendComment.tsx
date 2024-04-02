@@ -17,7 +17,7 @@ export default function SendComment() {
             alt='Profile Pictures'
             className='rounded-full'
           />
-          <h2 className='font-semibold'>Hendra Anggara</h2>
+          <h2 className='font-semibold opacity-90'>Hendra Anggara</h2>
         </div>
         <form action='' className='flex gap-x-4 items-center'>
           <textarea

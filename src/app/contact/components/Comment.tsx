@@ -14,9 +14,9 @@ export default function Comment({
   message,
 }: CommentProps): JSX.Element {
   return (
-    <div className='flex flex-col  gap-y-3 dark:border-neutral-700 border-slate-300 p-3 dark:bg-[#282828] bg-zinc-200 rounded-md '>
-      <div className='flex items-center justify-between'>
-        <div className='flex items-center gap-x-2'>
+    <div className='flex flex-col  gap-y-1 dark:border-neutral-700  border-slate-300 p-3 dark:bg-[#282828] bg-zinc-200 rounded-md rounded-tr-2xl rounded-br-2xl'>
+      <div className='flex items-center justify-between mb-1'>
+        <div className='flex items-center gap-x-[6px]'>
           <Image
             src={profileImageUrl}
             alt={name}
@@ -24,11 +24,11 @@ export default function Comment({
             height={36}
             className='rounded-full'
           />
-          <h3 className='dark:text-neutral-200'>{name}</h3>
+          <h3 className='dark:text-neutral-200 font-semibold opacity-90'>{name}</h3>
         </div>
-        <h3 className='dark:text-zinc-500'>{nTimeAgo}</h3>
+        <h3 className='dark:text-zinc-500 dark:opacity-100 opacity-70 text-sm'>{nTimeAgo}</h3>
       </div>
-      <p className='dark:text-stone-200'>{message}</p>
+      <p className='dark:text-stone-200 text-emerald-900 opacity-95'>{message}</p>
     </div>
   );
 }
