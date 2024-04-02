@@ -8,7 +8,7 @@ export default function SendComment() {
         <p>Leave a comment</p>
         <LuPencilLine />
       </h1>
-      <div className='rounded-tr-2xl rounded-br-2xl dark:bg-neutral-800 bg-zinc-200 dark:border-neutral-700 border-slate-300 flex flex-col gap-y-2 p-2 rounded-md w-full sm:w-min sm:min-w-[50%]'>
+      <div className='rounded-tr-2xl rounded-br-2xl dark:bg-neutral-800 bg-zinc-200 dark:border-neutral-700  flex flex-col gap-y-2 p-2 rounded-md w-full sm:w-min sm:min-w-[50%]'>
         <div className='flex items-center gap-x-2'>
           <Image
             src='https://placehold.co/100x100/000000/FFFFFF/png'
@@ -22,7 +22,7 @@ export default function SendComment() {
         <form action='' className='flex gap-x-4 items-center'>
           <textarea
             name='comment'
-            className=' [resize:none] dark:placeholder:opacity-30 placeholder:opacity-50 w-full box-content dark:border dark:border-neutral-600 border-pink-400 border rounded-sm bg-transparent p-[5px] '
+            className='rounded-tr-md text-sm rounded-br-xl border-emerald-400 [resize:none] dark:placeholder:opacity-30 placeholder:opacity-50 w-full box-content dark:border dark:border-[#52525b84] border rounded-sm bg-transparent p-[5px] '
             rows={1}
             required
             placeholder='Type here...'

@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import Contacts from '@/app/contact/components/Contacts';
 import SignIn from '@/app/contact/components/SignIn';
 import Comments from '@/app/contact/components/Comments';
