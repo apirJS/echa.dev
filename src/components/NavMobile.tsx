@@ -12,7 +12,7 @@ export default function NavMobile({
   pathName,
   isMenuOpen,
   setIsMenuOpen,
-  paths
+  paths,
 }: Props) {
   return (
     <div

@@ -14,7 +14,7 @@ export default function Comment({
   message,
 }: CommentProps): JSX.Element {
   return (
-    <div className='flex flex-col  gap-y-3 dark:border-neutral-700 border-slate-300 p-3 dark:bg-[#282828] bg-neutral-200 rounded-md '>
+    <div className='flex flex-col  gap-y-3 dark:border-neutral-700 border-slate-300 p-3 dark:bg-[#282828] bg-zinc-200 rounded-md '>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-x-2'>
           <Image

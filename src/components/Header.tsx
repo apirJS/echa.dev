@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import LoadingSpin from 'react-loading-spin';
 import Navbar from './Navbar';
 import EmailButton from './EmailButton';

@@ -1,3 +1,9 @@
+import UnderConstruction from '@/components/UnderConstruction';
+
 export default function Blog() {
-  return <h1>Ini Blog</h1>
+  return (
+    <main>
+      <UnderConstruction />
+    </main>
+  );
 }

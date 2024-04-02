@@ -10,7 +10,7 @@ export default function Contact() {
       <Contacts />
       {/* <SignIn /> */}
       <SendComment />
-      <hr className='ml-3 mr-3 mt-6 dark:opacity-10 dark:text-slate-500 text-black'/>
+      <hr className='ml-3 mr-3 mt-2 dark:opacity-10 dark:text-slate-500 text-black'/>
       <Comments />
     </main>
   );
