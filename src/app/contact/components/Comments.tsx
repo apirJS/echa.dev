@@ -40,7 +40,7 @@ export default function Comments() {
   ];
 
   return (
-    <section className='p-3 flex flex-col gap-y-3 mt-8'>
+    <section className='p-3 flex flex-col gap-y-3 mt-6'>
       {comments.map(({ profileImageUrl, name, message, nTimeAgo }, index) => {
         return (
           <Comment

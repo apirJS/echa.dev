@@ -12,7 +12,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.active-link {
+/* .active-link {
   text-decoration: underline;
   text-decoration-thickness: .5px;
   text-underline-offset: 4px;
@@ -23,7 +23,7 @@ html {
 .dark .active-link {
   text-decoration-color: white;
   -moz-text-decoration-color: white;
-}
+} */
 
 .waving-hand {
   animation-name: wave-animation;
