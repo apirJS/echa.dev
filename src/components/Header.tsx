@@ -43,40 +43,35 @@ export default function Header() {
   }, []);
 
   return (
-    <>
-      <header className='transition box-content z-[500] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
-        <div className='flex ml-4 lg:max-w-[50vw] w-full justify-between'>
-          <Navbar pathName={pathName} paths={paths} />
-          <div className='flex items-center gap-4 text-[1.5rem] mr-4'>
-            {mounted ? (
-              <>
-                <EmailButton />
-                <ThemeToggle />
-              </>
-            ) : (
-              <LoadingSpin
-                primaryColor='white'
-                secondaryColor='#171717'
-                size='17px'
-                width='3px'
-                animationDuration='2s'
-              />
-            )}
-          </div>
+    <header className='transition box-content z-[999] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
+      <div className='flex ml-4 lg:max-w-[50vw] w-full justify-between'>
+        <Navbar pathName={pathName} paths={paths} />
+        <div className='flex items-center gap-4 text-[1.5rem] mr-4'>
+          {mounted ? (
+            <>
+              <EmailButton />
+              <ThemeToggle />
+            </>
+          ) : (
+            <LoadingSpin
+              primaryColor='white'
+              secondaryColor='#171717'
+              size='17px'
+              width='3px'
+              animationDuration='2s'
+            />
+          )}
         </div>
-        <button
-          className='sm:hidden mr-6 active:scale-105'
-          onClick={handleMenu}
-        >
-          <IoIosMenu size={26} />
-        </button>
-      </header>
+      </div>
+      <button className='sm:hidden mr-6 active:scale-105' onClick={handleMenu}>
+        <IoIosMenu size={26} />
+      </button>
       <NavMobile
         pathName={pathName}
         isMenuOpen={isMenuOpen}
         setIsMenuOpen={setIsMenuOpen}
         paths={paths}
       />
-    </>
+    </header>
   );
 }
