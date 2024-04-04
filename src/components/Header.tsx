@@ -42,8 +42,9 @@ export default function Header() {
     }
   }, []);
 
+
   return (
-    <header className='transition box-content z-[999] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
+    <header className='select-none transition box-content z-[999] inset-x-0 top-0 fixed min-h-[10vh] flex border-b dark:border-b-gray-700 lg:justify-center border-b-zinc-300 dark:bg-dark-primary justify-between items-center md:font-medium bg-white'>
       <div className='flex ml-4 lg:max-w-[50vw] w-full justify-between'>
         <Navbar pathName={pathName} paths={paths} />
         <div className='flex items-center gap-4 text-[1.5rem] mr-4'>

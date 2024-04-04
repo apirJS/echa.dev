@@ -12,7 +12,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className='w-full p-3 flex justify-between md:text-base gap-y-3 my-[6vh] sm:my-[12vh] text-sm flex-col sm:flex-row items-center'>
+    <footer className='select-nonek w-full p-3 flex justify-between md:text-base gap-y-3 my-[6vh] sm:my-[12vh] text-sm flex-col sm:flex-row items-center'>
       <menu className='flex gap-x-4'>
         {paths.map(([href, name]) => {
           return (

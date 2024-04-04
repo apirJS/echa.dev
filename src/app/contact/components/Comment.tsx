@@ -1,4 +1,6 @@
 import Image from 'next/image';
+import { FaTrash } from 'react-icons/fa';
+import CommentDate from '@/app/contact/components/CommentDate'
 
 interface CommentProps {
   profileImageUrl: string;
@@ -24,11 +26,15 @@ export default function Comment({
             height={36}
             className='rounded-full'
           />
-          <h3 className='dark:text-neutral-200 font-semibold opacity-90'>{name}</h3>
+          <h3 className='dark:text-neutral-100 font-semibold opacity-95 '>
+            {name}
+          </h3>
         </div>
-        <h3 className='dark:text-zinc-500 dark:opacity-100 opacity-70 text-sm'>{nTimeAgo}</h3>
+        <CommentDate nTimeAgo={nTimeAgo}/>
       </div>
-      <p className='dark:text-stone-200 text-emerald-900 opacity-95'>{message}</p>
+      <p className='dark:text-stone-200 text-emerald-900 dark:opacity-95'>
+        {message}
+      </p>
     </div>
   );
 }

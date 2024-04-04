@@ -14,4 +14,16 @@ type Envs =
   | 'NEXTAUTH_URL'
   | 'NEXTAUTH_SECRET';
 
+  interface User {
+    id: number;
+    name: string;
+    imageUrl: string;
+  }
+  
+  interface Comment {
+    id: number;
+    text: string;
+    userId: number;
+  }
+
 export type { SVGComponentProps, Envs };

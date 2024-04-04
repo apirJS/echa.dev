@@ -19,14 +19,14 @@ export default function Project({
   img,
 }: ProjectProps): JSX.Element {
   return (
-    <div className='relative rounded-md dark:bg-[#282828] bg-zinc-200 p-4 pb-14'>
+    <div className='relative rounded-md dark:bg-[#282828] bg-neutral-200 p-3 pb-14'>
       <div className='flex justify-center sm:block'>
         <Image
           src={img}
           alt={title}
           width={400}
           height={200}
-          className='border rounded-md mb-2'
+          className=' rounded-md mb-2'
         />
       </div>
       <div className='flex flex-col gap-3'>
@@ -38,7 +38,7 @@ export default function Project({
             return (
               <span
                 key={index}
-                className='lg:text-xs text-center inline-block border-none dark:bg-slate-700 bg-emerald-300 p-[5px]  text-xs dark:border-zinc-500 rounded-sm rounded-tr-lg font-semibold border-slate-400'
+                className='lg:text-xs text-center inline-block border-none dark:bg-neutral-600 bg-emerald-300 p-[5px]  text-xs dark:border-zinc-500 rounded-sm rounded-tr-lg font-semibold border-slate-400'
               >
                 {tag}
               </span>

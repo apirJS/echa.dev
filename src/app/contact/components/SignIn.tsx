@@ -1,6 +1,5 @@
-import GoogleIcon from '@/components/icons/GoogleIcon';
-import {  FaGithub } from 'react-icons/fa';
 import { LuPencilLine } from 'react-icons/lu';
+import SignInOptions from "@/app/contact/components/SignInOptions"
 
 export default function SignIn() {
   return (
@@ -9,16 +8,7 @@ export default function SignIn() {
         <p>Leave a comment</p>
         <LuPencilLine />
       </h1>
-      <div className='flex flex-row items-start text-xs gap-x-2'>
-        <button className='bg-gray-200 dark:bg-white text-slate-600 p-1 rounded-sm font-semibold flex flex-row justify-center items-center gap-x-2 active:scale-95'>
-          <GoogleIcon width={20} height={20}/>
-          <span>Continue with Google</span>
-        </button>
-        <button className='dark:bg-black bg-black text-white dark:text-white p-1 rounded-sm font-semibold flex flex-row justify-center items-center gap-x-2 active:scale-95'>
-          <FaGithub size={20} />
-          <span>Continue with GitHub</span>
-        </button>
-      </div>
+      <SignInOptions />
     </section>
   );
 }

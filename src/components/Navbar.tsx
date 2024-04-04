@@ -18,7 +18,7 @@ export default function Navbar({ pathName, paths}: NavbarProps) {
   }, [pathName]);
 
   return (
-    <nav className='hidden relative sm:flex gap-8 text-sm sm:text-base '>
+    <nav className=' hidden relative sm:flex gap-8 text-sm sm:text-base '>
       <div
         className='absolute w-0 h-[2px] -bottom-[3px] left-0 dark:bg-white bg-slate-600 transition-all duration-150'
         ref={markerRef}
