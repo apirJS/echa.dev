@@ -4,7 +4,7 @@ import '@/styles/globals.css';
 import ThemeProvider from '@/components/Provider';
 import Container from '@/components/Container';
 import Header from '@/components/Header';
-import { test } from '@/database/db';
+import { test } from '../database/schema';
 
 const inter = Inter({ subsets: ['latin'] });
 

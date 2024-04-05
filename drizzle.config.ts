@@ -1,10 +1,9 @@
 import type { Config } from 'drizzle-kit';
 
-export default {
+const config: Config =  {
   driver: 'better-sqlite',
   out: './src/database/migrations',
-  dbCredentials: {
-    url: './src/database/sqlite.db'
-  },
   schema: './src/database/schema.ts'
-} as Config
+}
+
+export default config

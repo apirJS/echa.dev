@@ -3,7 +3,7 @@ import SignIn from '@/app/contact/components/SignIn';
 import Comments from '@/app/contact/components/Comments';
 import SendComment from './components/SendComment';
 import { getServerSession } from 'next-auth';
-import db from '@/database/db'
+import db from '../../database/schema'
 
 export default async function Contact() {
   const session = await getServerSession();
