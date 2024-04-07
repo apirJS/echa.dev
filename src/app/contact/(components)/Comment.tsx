@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import { FaTrash } from 'react-icons/fa';
-import CommentDate from '@/app/contact/components/CommentDate'
+import CommentDate from '@/app/contact/(components)/CommentDate'
 
 interface CommentProps {
   profileImageUrl: string;

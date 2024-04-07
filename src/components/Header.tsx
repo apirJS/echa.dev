@@ -1,5 +1,5 @@
 'use client';
-import { Suspense, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import LoadingSpin from 'react-loading-spin';
 import Navbar from './Navbar';
 import EmailButton from './EmailButton';
@@ -21,13 +21,6 @@ export default function Header() {
 
   useEffect(() => {
     setMounted(true);
-  }, []);
-
-  function handleMenu(): void {
-    setIsMenuOpen(isMenuOpen ? false : true);
-  }
-
-  useEffect(() => {
     if (window && typeof window !== 'undefined') {
       window.addEventListener('scroll', () => {
         const header = document.querySelector('header');
@@ -41,6 +34,10 @@ export default function Header() {
       });
     }
   }, []);
+
+  function handleMenu(): void {
+    setIsMenuOpen(isMenuOpen ? false : true);
+  }
 
 
   return (

@@ -19,6 +19,13 @@ const nextAuthOptions: NextAuthOptions = {
     maxAge: 60 * 60 * 24
   },
   secret: getEnv('NEXTAUTH_SECRET'),
+  pages: {
+    signIn: '/contact',
+    signOut: '/contact',
+    error: '/contact',
+    verifyRequest: '/contact',
+    newUser: '/contact',
+  }
 };
 
 export { nextAuthOptions };

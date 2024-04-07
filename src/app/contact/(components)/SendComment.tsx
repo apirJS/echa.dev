@@ -1,7 +1,7 @@
 import { Session } from 'next-auth';
 import Image from 'next/image';
 import { LuPencilLine } from 'react-icons/lu';
-import CommentForm from '@/app/contact/components/CommentForm';
+import CommentForm from '@/app/contact/(components)/CommentForm';
 
 export default function SendComment({ session }: { session: Session }) {
   return (

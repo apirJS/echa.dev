@@ -1,5 +1,5 @@
 import { format as formatDate } from 'timeago.js';
-import Comment from '@/app/contact/components/Comment';
+import Comment from '@/app/contact/(components)/Comment';
 
 interface Comment {
   profileImageUrl: string;

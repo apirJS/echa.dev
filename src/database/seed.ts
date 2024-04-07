@@ -16,16 +16,16 @@ async function run(): Promise<void> {
   ]);
 
   await db.insert(comments).values([
-    { userId: 1, comment: 'Comment 1' },
-    { userId: 2, comment: 'Comment 2' },
-    { userId: 3, comment: 'Comment 3' },
-    { userId: 4, comment: 'Comment 4' },
-    { userId: 5, comment: 'Comment 5' },
-    { userId: 6, comment: 'Comment 6' },
-    { userId: 7, comment: 'Comment 7' },
-    { userId: 8, comment: 'Comment 8' },
-    { userId: 9, comment: 'Comment 9' },
-    { userId: 10, comment: 'Comment 10' },
+    { userId: 1, content: 'Comment 1' },
+    { userId: 2, content: 'Comment 2' },
+    { userId: 3, content: 'Comment 3' },
+    { userId: 4, content: 'Comment 4' },
+    { userId: 5, content: 'Comment 5' },
+    { userId: 6, content: 'Comment 6' },
+    { userId: 7, content: 'Comment 7' },
+    { userId: 8, content: 'Comment 8' },
+    { userId: 9, content: 'Comment 9' },
+    { userId: 10, content: 'Comment 10' },
   ]);
 }
 

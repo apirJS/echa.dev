@@ -1,4 +1,4 @@
-import Project from '@/app/projects/components/Project';
+import Project from '@/app/projects/(components)/Project';
 
 interface Project {
   title: string;

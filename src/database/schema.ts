@@ -13,7 +13,7 @@ const usersRelations = relations(users, ({ many }) => ({
 
 const comments = sqliteTable('comments', {
   id: integer('id').primaryKey({ autoIncrement: true }),
-  comment: text('comment').notNull(),
+  content: text('content').notNull(),
   userId: integer('userId').notNull(),
 });
 
