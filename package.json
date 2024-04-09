@@ -9,11 +9,13 @@
     "lint": "next lint",
     "db:generate": "drizzle-kit generate:sqlite",
     "db:migrate": "tsx src/database/migrate.ts",
-    "db:seed": "tsx src/database/seed.ts"
+    "db:seed": "tsx src/database/seed.ts",
+    "db:push": "npx drizzle-kit push:sqlite"
   },
   "dependencies": {
     "better-sqlite3": "^9.4.5",
     "drizzle-orm": "^0.30.7",
+    "javascript-time-ago": "^2.5.9",
     "next": "14.1.0",
     "next-auth": "^4.24.7",
     "next-themes": "^0.2.1",

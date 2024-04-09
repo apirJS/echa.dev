@@ -12,7 +12,7 @@ export default function Contact() {
   return (
     <main className='flex flex-col justify-start md:justify-center gap-1 min-w-[80vw] md:min-w-[50vw]'>
       <Contacts />
-      {session ? <SendComment session={session} /> : <SignIn session={session}/>}
+      {session ? <SendComment session={session} /> : <SignIn/>}
       <hr className='ml-3 mr-3 mt-2 dark:opacity-10 dark:text-slate-500 text-black' />
       <Comments />
     </main>

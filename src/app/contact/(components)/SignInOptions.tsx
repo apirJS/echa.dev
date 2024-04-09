@@ -1,14 +1,12 @@
 'use client';
 
 import GoogleIcon from '@/components/icons/GoogleIcon';
-import { Session } from 'next-auth';
 import { signIn } from 'next-auth/react';
 import { FaGithub } from 'react-icons/fa';
 
-export default function SignInOptions({ session }: { session: Session | null}) {
-  async function handleSignIn(provider: "google" | "github") {
-    const response = await signIn(provider)
-    console.log(response, session)
+export default function SignInOptions() {
+  async function handleSignIn(provider: 'google' | 'github') {
+    await signIn(provider);
   }
 
   return (

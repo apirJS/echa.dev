@@ -1,25 +1,13 @@
-import { relations } from 'drizzle-orm';
+import { sql } from 'drizzle-orm';
 import { integer, text, sqliteTable } from 'drizzle-orm/sqlite-core';
-
-const users = sqliteTable('users', {
-  id: integer('id').primaryKey({ autoIncrement: true }),
-  name: text('name').notNull(),
-  imageUrl: text('imageUrl').notNull(),
-} );
-
-const usersRelations = relations(users, ({ many }) => ({
-  comments: many(comments),
-}));
 
 const comments = sqliteTable('comments', {
   id: integer('id').primaryKey({ autoIncrement: true }),
+  email: text('email').notNull(),
+  name: text('name').notNull(),
+  imageUrl: text('imageUrl').notNull(),
   content: text('content').notNull(),
-  userId: integer('userId').notNull(),
+  createdAt: text("createdAt").default(sql`(datetime('now','localtime'))`)
 });
 
-const commentsRelations = relations(comments, ({ one }) => ({
-  user: one(users, { fields: [comments.userId], references: [users.id] }),
-}));
-
-
-export { users, comments, usersRelations, commentsRelations }
+export { comments };

@@ -25,7 +25,8 @@ const nextAuthOptions: NextAuthOptions = {
     error: '/contact',
     verifyRequest: '/contact',
     newUser: '/contact',
-  }
+  },
+  
 };
 
 export { nextAuthOptions };
