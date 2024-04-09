@@ -31,7 +31,7 @@ export default function Comment({
         </div>
         <CommentDate nTimeAgo={nTimeAgo}/>
       </div>
-      <p className='dark:text-stone-200 text-emerald-900 dark:opacity-95'>
+      <p className='dark:text-stone-200 text-emerald-900 dark:opacity-95 break-words whitespace-normal'>
         {content}
       </p>
     </div>
